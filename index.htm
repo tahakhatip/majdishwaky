@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tahakhatip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- link file css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<style>
+    @keyframes bounce {
+        0%,
+        100% {
+            transform: translateY(-25%);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+
+        50% {
+            transform: translateY(0);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+
+    .animate-bounce {
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent;
+        }
+
+        50% {
+            border-color: black;
+        }
+    }
+
+    .animate-typing {
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: .15em solid black;
+        width: 100%;
+        animation: typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+    .glass-effect {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+    }
+</style>
+<style>
+    
+
+    .about-img img {
+        animation: fallDown 2s ease-out forwards;
+    }
+
+    @keyframes fallDown {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+<body>
+    <header>
+        <nav class="contanier">
+            <img style="width: 40px; height: 40pxx; border-radius: 20px;" class="logo" src="img/WhatsApp Image 2024-06-08 at 2.33.55 PM.jpeg" alt="">
+            <i id="btn-menu" class="fa-solid fa-bars"></i>
+            <div class="nav-links">
+                <a href="#home" class="active">الرئيسية</a>
+                <a href="#about">مجدي الشيكي</a>
+                <a href="#services">البرنامج الانتخابي </a>
+                <a href="#Portfolio">البعض من اعمالي </a>
+                <a href="#Contact">تواصل معنا </a>
+            </div>
+        </nav>
+    </header>
+    <!-- start home sec -->
+    <div class="hero" id="home">
+        <div class="contanier">
+            <div class="content">
+                <h4>مرحباً، أنا</h4>
+                <h1  class="text-4xl text-white mt-4 font-bold animate-typing"><span style="color: #ffaa17;">عمر الشويكي</span></h1>
+                <p class="text-4xl text-white mt-4 font-bold animate-typing">مرشحكم <span style="color: #ffaa17;">لدائرة الاولى  </span></p>
+                <a href="#" class="btn">تحميل السيرة الذاتية</a>
+            </div>
+
+            <div class="hero-img">
+                <img class="animate-bounce" style="border-radius: 200px;" src="img/m .jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- start about sec -->
+
+    <section id="about" class="about">
+        <div class="contanier">
+            <div class="about-img">
+                <img src="img/m .jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>انجازاته<span>   </span></h1>
+                <h3 class="animate__animated animate__fadeIn">مجدي -الشويكي   مرشحكم </h3>
+                <p>هو مواطن مخلص، يتمتع بخبرة تزيد عن [8] سنوات في العمل العام، ويؤمن بقوة أن التغيير يأتي  من الله ثم من الناس وللناس. يسعى من خلال ترشحه 
+                    
+                       لمواصلة هذه المسيرة من خلال دوره كمرشح في الانتخابات.هو شخصية معروفة بتفانيه في خدمة الناس. على مدار سنوات
+
+
+
+
+
+                </p>
+                <div class="btns">
+                    <a href="#" class="btn">تحميل السيرة الذاتية</a>
+                    <a href="#" class="btn">تواصل معي</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start Services -->
+
+    <section id="services" class="services">
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>البرنامج الانتخابي</h1>
+            </div>
+
+            <div class="boxs">
+
+                <div class="box">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>التعليم </h3>
+                    <P>"تحسين جودة التعليم وضمان فرص تعليمية متكافئة للجميع."</P>
+                    <a href="#" class="btn">اقرأ المزيد</a>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-star"></i>
+                    <h3> الصحة</h3>
+               <P>"تطوير خدمات الرعاية الصحية وتوفيرها بشكل عادل لكافة المواطنين."</P>
+
+
+
+
+
+                   </p>
+                    <a href="#" class="btn">اقرأ المزيد</a>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>الاقتصاد </h3>
+                    <P>"تشجيع الاستثمار المحلي وخلق فرص عمل جديدة للشباب."
+                        </P> 
+
+
+
+
+
+                    </p>
+                    <a href="#" class="btn">اقرأ المزيد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- start Portfolio -->
+
+    <section id="Portfolio" class="portfolio">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/m .jpg" class="d-block w-100 h-80" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/q.jpg" class="d-block w-80" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/j.jpg" class="d-block w-80" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+    </section>
+
+
+    <!-- start Contact -->
+
+    <section id="Contact" class="contact">
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>تواصل <span> معنا</span></h1>
+            </div>
+
+            <form action="">
+                <input type="text" placeholder="الاسم الأول">
+                <input type="text" placeholder="الاسم الأخير">
+                <input type="number" placeholder="رقم الهاتف">
+                <input type="email" placeholder="البريد الإلكتروني">
+                <textarea name="" id="" cols="30" rows="10" placeholder="رسالتك"></textarea>
+                <button class="btn">إرسال الرسالة</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="w-full px-4 sm:px-20 py-10">
+           
+        <footer class="bg-dark text-white pt-5 pb-4">
+            <div class="container text-center text-md-left">
+              <div class="row text-center text-md-left">
+                
+                <!-- معلومات الشركة -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> سعادة مجدي الشويكي</h5>
+                  <p>
+                      الرئيس السابق لدى منطقة النصر على مدار ثمان سنوات
+                </p>
+                </div>
+          
+                <!-- روابط مفيدة -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> خدمات الموقع</h5>
+                  <p><a href="#home" class="text-white" style="text-decoration: none;"> الرئيسية</a></p>
+                  <p><a href="#about" class="text-white" style="text-decoration: none;"> سعادة المرشح</a></p>
+                  <p><a href="#services" class="text-white" style="text-decoration: none;"> البرنامج النتخابي</a></p>
+                  <p><a href="#contact" class="text-white" style="text-decoration: none;"> الخدمات</a></p>
+                </div>
+          
+                <!-- روابط التواصل الاجتماعي -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">تابعنا على</h5>
+                  <p><a href="https://web.facebook.com/profile.php?id=100063663293392&sk=about" class="text-white" style="text-decoration: none;"><i class="fab fa-facebook-f"></i> فيس بوك</a></p>
+                  <p><a href="#" class="text-white" style="text-decoration: none;"><i class="fab fa-instagram"></i> انستجرام</a></p>
+                  <p><a href="#" class="text-white" style="text-decoration: none;"><i class="fab fa-whatsapp"></i> واتس اب</a></p>
+                </div>
+          
+                <!-- الاتصال -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">العنوان</h5>
+                  <p><i class="fas fa-home mr-3"></i> جبل المنارة</p>
+                  <p><i class="fas fa-envelope mr-3"></i> email@example.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> 0790060253</p>
+                  <p><i class="fas fa-print mr-3"></i>0797428723</p>
+                </div>
+          
+              </div>
+          
+              <!-- خط فاصل -->
+              <hr class="mb-4">
+          
+              <!-- حقوق النشر -->
+              <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                  <p class="text-center text-md-left">© 2024 جميع الحقوق محفوظة:
+                    <a href="#" style="text-decoration: none;">
+                      <strong class="text-warning"> لدى سعادة مجدي الشويكي</strong>
+                    </a>
+                  </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                  <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-whatsapp"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </footer>
+          
+    </section>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  
+</body>
+</html>
